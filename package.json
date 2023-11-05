@@ -1,3 +1,32 @@
 {
+  "name": "Park-UI-Test",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:gurkerl83/park-ui-test.git",
+  "author": "Gritsch Markus <markus.gritsch@millipede.me>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist && rimraf .next",
+    "dev": "yarn clean && yarn run next dev",
+    "start": "yarn clean && next build && next start"
+  },
+  "dependencies": {
+    "next": "^14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.35",
+    "@types/react-dom": "^18.2.14",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "resolutions": {
+    "react": "18.3.0-canary-ce2bc58a9-20231102",
+    "react-dom": "18.3.0-canary-ce2bc58a9-20231102"
+  },
+  "engines": {
+    "node": "20.x"
+  },
   "packageManager": "yarn@4.0.1"
 }
