@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Here you can customize the color palette, which is then used in Park UI Tailwind theme configuration. see here 
+https://park-ui.com/docs/tailwind/theme/customize/ */
+
+:root {
+}
+
+.button--variant_outline {
+  @apply border-4;
+}
+
+.datePicker__tableHead {
+  @apply uppercase;
+  @apply border-4;
+}
+
+/* Define for cell globally  */
+
+.table__cell {
+  @apply uppercase;
+  @apply border-2;
+}
+
+/* Override / specifics - inherit the rest, here applies for variant specifics */
+.table__cell--size_md {
+  @apply bg-orange-200;
+}
+
+/* Custom class definition used direclty in the component */
+
+.last-column {
+  @apply text-right;
+}
