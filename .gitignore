@@ -4,6 +4,8 @@
 .next
 dist
 
+node_modules
+
 # >= v2 yarn
 .yarn/*
 !.yarn/releases
